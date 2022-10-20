@@ -1,0 +1,93 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* //main content */
+    .main-content {
+        flex-grow: 1;
+    }
+    .main-content.active {
+        z-index: 99999;
+    }
+    .menu-option {
+        width: 250px;
+    }
+    .action-menu {
+        display: flex;
+    }
+    .menu-chat {
+        flex-grow: 1;
+    }
+    .chat-box {
+        display: none;
+        position: absolute;
+        right: 0;
+        /* left: var(--sidebar-width); */
+        left: 0;
+        z-index: 999;
+    }
+    .card-box-chat.active {
+        background-color: var(--white);
+    }
+    .card-box-chat:hover {
+        background-color: var(--active-card-boxchat);
+    }
+    .item-chat-action.header:nth-child(1) {
+        display: none;
+    }
+    .item-chat-action.header:nth-child(3) {
+        display: none;
+    }
+    /* .header-chat-box-left .image-user-chat-box {
+        display: none;
+    } */
+    .chat-input span {
+        margin-right: 10px;
+    }
+    .back-to-menu-btn {
+        display: block;
+        font-size: 2rem;
+        margin-right: 5px;
+        margin-left: 5px;
+        color: var(--main-color-l1);
+    }
+    .back-to-menu-btn:hover {
+        color: var(--hover-main-color);
+    }
+    .opacity-children {
+        max-width: 90%;
+        min-width: 90%;
+    }
+    .infor {
+        font-weight: 500;
+    }
+    .chat-content .content-item-chat {
+        max-width: 60%;
+    }
+    .item-chat .user-icon-content-item-chat {
+        height: 30px;
+        width: 30px;
+    }
+    /* typpy custom  */
+    .tippy-box {
+        display: none;
+    }
+    /* icon  */
+    .fa.fa-circle.off {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>MES | Tran Viet Intern MID VietNam</title>
+        <link rel="stylesheet" href="./css/root.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/responsive.css" />
+        <link rel="stylesheet" href="./css/toast.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+        <script src="./util/components/itemMess.js"></script>
+        <script src="./util/components/cardUser.js"></script>
+        <script src="./js/toast.js"></script>
+
+        <script
+            src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+            integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/env.js"></script>
+        <script src="./js/tools.js"></script>
+    </head>
+    <body>
+        <div id="toast"></div>
+        <div class="content-loading">
+            <!-- <div class="loader"></div> -->
+            <div class="mesh-loader">
+                <div class="set-one">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="set-two">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <!-- <span class="content-loading-text">Đang tải...</span> -->
+        </div>
+        <div class="wrapper-opacity" style="display: none">
+            <div class="opacity-children">
+                <span class="close-opacity-btn"><i class="close"></i></span>
+                <div class="title-confirm"><h3></h3></div>
+            </div>
+        </div>
+        <div class="root">
+            <div class="sidebar">
+                <div>
+                    <div class="user-sidebar">
+                        <div class="wrapper-user-sidebar">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+                                alt="user-icon"
+                            />
+                        </div>
+                        <div class="menu-option" style="display: none">
+                            <div class="menu-option-username"><h3></h3></div>
+                            <div class="menu-option-option">
+                                <p>Hồ sơ của bạn</p>
+                                <p>Cài đặt</p>
+                            </div>
+                            <div class="menu-option-logout">
+                                <p>Đăng xuất <i class="fas fa-sign-out-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-sidebar"></div>
+                </div>
+                <div class="bottom-sidebar"></div>
+            </div>
+            <div class="main-content">
+                <div class="menu-chat">
+                    <div class="header-menu">
+                        <i class="fas fa-search search-icon"></i>
+                        <input class="search-input" type="text" placeholder="Tìm kiếm" />
+
+                        <div class="action-menu"><i class="fas fa-user-plus"></i> <i class="fas fa-users"></i></div>
+                        <div class="search-result_area" style="display: none">
+                            <p class="title-search-result">Kết quả tìm kiếm</p>
+                        </div>
+                    </div>
+                    <div class="menu-chat-content">
+                        <div class="header-menu-chat-content">
+                            <div class="header-menu-chat-content-left">
+                                <p class="active">Tất cả</p>
+                                <p>Chưa đọc</p>
+                            </div>
+
+                            <div class="header-menu-chat-content-right">
+                                <p>Phân loại<i class="fas fa-chevron-down"></i></p>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                        <div class="main-menu-chat-content"></div>
+                    </div>
+                </div>
+                <div class="chat-box">
+                    <div class="header-chat-box" style="display: none">
+                        <div class="header-chat-box-left">
+                            <span class="back-to-menu-btn"><i class="fas fa-chevron-left"></i></span>
+                            <div class="image-user-chat-box">
+                                <div class="wrapper-image-user-chat-box">
+                                    <img
+                                        src="https://png.pngtree.com/png-clipart/20190122/ourlarge/pngtree-cartoon-piggy-group-photo-year-of-the-pig-png-image_526904.jpg"
+                                    />
+                                </div>
+                            </div>
+                            <div class="infor-user-chat-box">
+                                <h4></h4>
+                                <span><i class="far fa-user"></i></span>
+                            </div>
+                        </div>
+                        <div class="header-chat-box-right">
+                            <div class="item-chat-action header"><i class="fas fa-user-plus"></i></div>
+                            <div class="item-chat-action header"><i class="fas fa-search"></i></div>
+                            <div class="item-chat-action header"><i class="fas fa-video"></i></div>
+                            <div class="item-chat-action header"><i class="fas fa-outdent"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="chat-content"></div>
+                    <div class="chat-area">
+                        <div class="chat-action"></div>
+                        <div class="chat-input">
+                            <input class="input-message" type="text" placeholder="Nhập tin nhắn..." />
+                            <span><i class="fas fa-paper-plane"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/handlesocketio.js"></script>
+        <script src="./js/variable.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./util/tool/tool.js"></script>
+        <script src="./js/config.js"></script>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+:root {
+    --bg-color: #0091ff;
+    --sidebar-width: 300px;
+    --menu-chat-width: 312px;
+
+    /* color   */
+    --white: #ffffff;
+    --n20: #e8eaef;
+    --main-text-color: #333;
+    --main-color-l0: #72808e9c;
+    --main-color-l1: #72808e;
+    --main-color-l3: #001a33;
+    --main-boder-color: #bcbdbd;
+    --hover-main-color: #0068ff;
+    --sidebar-active: #006edc;
+    --bg-content-area: #f4f5f7;
+    --seft-chat-bg: #e5efff;
+    --active-card-boxchat: #e5efff;
+    --NG60: #394e60;
+    --B60: #0068ff;
+    --N30: #e5e7eb;
+    --N50: #e1e4ea;
+    --primary-text: #001a33;
+    --active-color: #00e00b;
+    --orange: #ff4500;
+
+    /* hover  */
+    --b001-hover: rgba(0, 0, 0, 0.1);
+    --BA20: rgba(0, 0, 0, 0.2);
+    --BA5: rgba(0, 0, 0, 0.05);
+    --BA10: rgba(0, 0, 0, 0.1);
+    --BA50: rgba(0, 0, 0, 0.5);
+    --hover-card: #eeeff2;
+    --icon-box-chat-hover: #e1e4ea;
+
+    /* table  */
+    --min-width-table: 40px;
+    --max-width-table: 100px;
+    --min-height-table: 35px;
+    --td-color: #d8dad8;
+    --th-l1-color: #006edc;
+}
+
+@keyframes opacity-animate-show {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* // call */
+/* animation: opacity-animate-show 0.15s linear; */
+
+@-webkit-keyframes move-y {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+    25% {
+        -webkit-transform: translateY(3px);
+    }
+    50% {
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        -webkit-transform: translateY(-3px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes move-x {
+    0% {
+        -webkit-transform: translateX(0);
+    }
+    25% {
+        -webkit-transform: translateX(3px);
+    }
+    50% {
+        -webkit-transform: translateX(0);
+    }
+    75% {
+        -webkit-transform: translateX(-3px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes mesh {
+    0% {
+        -webkit-transform-origin: 50% -40%;
+        transform-origin: 50% -40%;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    50% {
+        -webkit-transform-origin: 50% -40%;
+        transform-origin: 50% -40%;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    50.00001% {
+        -webkit-transform-origin: 50% 140%;
+        transform-origin: 50% 140%;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform-origin: 50% 140%;
+        transform-origin: 50% 140%;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes mesh {
+    0% {
+        -webkit-transform-origin: 50% -40%;
+        transform-origin: 50% -40%;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    50% {
+        -webkit-transform-origin: 50% -40%;
+        transform-origin: 50% -40%;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    50.00001% {
+        -webkit-transform-origin: 50% 140%;
+        transform-origin: 50% 140%;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform-origin: 50% 140%;
+        transform-origin: 50% 140%;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes move-x {
+    0% {
+        -webkit-transform: translateX(0);
+    }
+    25% {
+        -webkit-transform: translateX(3px);
+    }
+    50% {
+        -webkit-transform: translateX(0);
+    }
+    75% {
+        -webkit-transform: translateX(-3px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+/* call  */
+/* -webkit-animation: move-y 2s linear infinite; */
